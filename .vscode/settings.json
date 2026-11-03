@@ -1,0 +1,109 @@
+{
+    "files.associations": { "*.py": "python" },
+    /* --- EJECUCIÓN Y TERMINAL --- */
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.gpuAcceleration": "off",
+    /* Bloqueo IA */
+    "chat.disableAIFeatures": true,
+    "chat.commandCenter.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.inlineChat.enable": false,
+    "github.copilot.chat.terminalChat.enabled": false,
+    "editor.inlineSuggest.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+/* --- CONFIGURACIÓN DE PYTHON Y FORMATO --- */
+    "editor.formatOnSave": true, 
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    "black-formatter.args": [
+        "--line-length",
+        "120"
+    ],
+
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "none",
+        "reportUnusedVariable": "none",
+        "reportMissingImports": "error"
+    },
+    "python.analysis.inlayHints.functionReturnTypes": false,
+    "python.analysis.inlayHints.variableTypes": false,
+    /* --- ERROR LENS (Configuración del curso anterior) --- */
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ],
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.followCursor": "activeLine",
+    "errorLens.delay": 5000,
+    "cSpell.enabled": false,
+    /* --- INTERFAZ LIMPIA Y DISTRACCIONES --- */
+    "workbench.sideBar.location": "left",
+    "workbench.editor.restoreViewState": false,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "extensions.ignoreRecommendations": true,
+    "git.enabled": true,
+    "git.autoRepositoryDetection": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    /* --- ESTÉTICA INSTITUCIONAL --- */
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#FF54FF",
+        "titleBar.activeForeground": "#FFFFFF",
+        "statusBar.background": "#FF54FF",
+        "statusBar.foreground": "#FFFFFF"
+    },
+    /* --- GESTIÓN DE ARCHIVOS --- */
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 15000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.venv": true,
+        "**/__pycache__": true,
+        "**/desktop.ini": true,
+        "**/.vscode": true
+    },
+    /* --- COMPATIBILIDAD --- */
+    "python.languageServer": "Default",
+    /* Intentar ocultar la interfaz de Chat/IA */
+    /* --- LIMPIEZA DE ICONOS MOLESTOS EN LA BARRA DE TÍTULO --- */
+    // Quita el icono de los cuadraditos (Layout Control) que abre los paneles
+    "workbench.layoutControl.enabled": false,
+    // Quita el botón de "Sign In" y la búsqueda del centro (si apareciera)
+    "workbench.commandCenter.enabled": false,
+    // Quita específicamente el botón de Chat de la IA de la parte superior
+    "chat.mode": "none",
+    "github.copilot.chat.enable": false,
+    // Mueve los iconos de control (si quedara alguno) para que no estorben
+    "workbench.editor.editorActionsLocation": "default",
+    "chat.agent.enabled": false,
+    "chat.extensionTools.enabled": false,
+    "chat.tools.autoExpandFailures": false,
+    "chat.tools.confirmationCarousel.enabled": false,
+    "chat.viewSessions.enabled": false,
+    "chat.mcp.access": "none",
+    "chat.mcp.apps.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true,
+    "workbench.activityBar.location": "default",
+    "outline.collapseItems": "alwaysCollapse",
+    /* --- HISTORIAL Y RECIENTES --- */
+    "search.quickOpen.includeHistory": false,
+    "workbench.commandPalette.history": 0,
+    "workbench.startupEditor": "none",
+    "explorer.openEditors.visible": 1
+}
